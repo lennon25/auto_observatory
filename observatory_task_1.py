@@ -1,4 +1,6 @@
 # -*-coding:utf-8-*-
+#!/usr/bin/python3
+
 from appium import webdriver
 import unittest
 import time
@@ -17,7 +19,6 @@ class ObservatoryAutoTest(unittest.TestCase):
             "autoGrantPermissions": True,
 
         }
-        # home activity: 
         # Agreement activity: hko.MyObservatory_v1_0.AgreementPage
 
         driver = webdriver.Remote('http://localhost:4723/wd/hub', desired_caps)
